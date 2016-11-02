@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+</head>
+<body style="background:#ccc;">
+	<h3><center>My Form</center></h3>
+	<form style="width:300px; background: red; padding:20px 10px;">
+		<div>
+			<label>Username *</label>
+			<input type="email" placeholder="Username"  maxLength="10" style="width:200px; height:30px; font-size: 15px;" required value="Admin" readonly />
+		</div>
+		<br>
+		<div>
+			<label>Password *</label>
+			<input type="password" placeholder="Password"  maxLength="10" style="width:200px; height:30px; font-size: 15px;" required/>
+		</div>
+		<div>
+			<br>
+			<!-- <center><input type="button" value="Sign In"/> </center> -->
+			<center><input type="submit" value="Sign In" disabled> <input type="reset" value="Reset"></center>
+		</div>
+	</form>
+	<form>
+		<input type="number" value="10" step="5" min="0" max="40">
+		<br>
+		<input type="range" min="0" max="200" value="80" >
+		<br>
+		<input type="date">
+		<input type="month">
+		<input type="time">
+		<input type="color">
+		<br>
+		<br>
+		<select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+		</select>
+		<select>
+				<option>jan</option>
+				<option>feb</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+		</select>
+		<input type="radio" name="xyz" > Male
+		<input type="radio" name="xyz" checked> FeMale
+		<br>
+		<input type="checkbox" checked> Terms & conditoons
+		<input type="checkbox"> Terms & conditoons
+		<input type="checkbox"> Terms & conditoons
+		<input type="checkbox"> Terms & conditoons
+		<input type="checkbox"> Terms & conditoons
+		<br>
+		<textarea placeholder="Address" rows="5"></textarea>
+		<br>
+		<input placeholder="Address" type="text" style="height:200px;">
+	</form>
+</body>
+</html>

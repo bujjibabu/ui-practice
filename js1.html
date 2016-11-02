@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style type="text/css">
+		.my-body {
+			background: url(http://1.bp.blogspot.com/-CYQ5F9q6YlE/VIX6zgIg8EI/AAAAAAAAGwU/nkOudSDpI18/s1600/website-background-rough-surface.jpg);
+		}
+		.my-form {
+			background: url(http://67.media.tumblr.com/58affeecd1e25c4967181dd2e4395b21/tumblr_mg1w01M5vg1rirnzso1_400.jpg);
+   		width: 300px;
+    	padding: 30px;
+    	margin: 0 auto;
+    	margin-top: 15%;
+      opacity: 0.7;
+		}
+		.username, .password {
+			display: block;
+	    width: 100%;
+	    height: 25px;
+	    margin-bottom: 15px;
+	    font-size: 18px;
+		}
+		.signin-btn {
+		text-align: center;
+    margin-top: 30px;
+		}
+		.signin-btn button {
+		  padding: 8px 40px;
+		  color: rgb(124,20,255);
+		  font-size: 15px;
+		  text-transform: capitalize;
+		  cursor: pointer;
+		  border: 1px solid #ccc;
+		}
+		.signin-btn button:hover {
+			border-color: red;
+			background: #ccc;
+			color: red;
+		}
+		.form-label {
+			color: #fff;
+			font-size: 20px;
+		}
+	</style>
+</head>
+	<body class="my-body">
+		<div>
+			<div class="my-form">
+				<div id="testing">
+					
+				</div>
+				<div>
+					<label class="form-label">Number1:</label>
+					<input type="number" placeholder="Number1" class="username" id="number1">
+				</div>
+				<div>
+					<label class="form-label">Number2: </label>
+					<input type="number" placeholder="Number2" class="password" id="number2">
+				</div>
+				<div class="signin-btn">
+					<button onclick="Add();">Sum</button>
+				</div>
+			</div>
+			<p>Sum(Number1 + Number2) = &copy; &nbsp; &nbsp; &nbsp; &nbsp; testing
+			<span id="sum"></span></p>
+		</div>
+
+		<script type="text/javascript">
+		 //"use strict";
+			document.getElementById('testing').innerHTML = '<i>Sum of 2 Numbers</i>';
+			var x = document.getElementById('number1').value = 10;
+			var y = document.getElementById('number2').value = 20;
+			var z = x+y;
+			// var x = '10';
+			// var 
+			//document.write('Welcome');
+			function Add () {
+				var num1 = parseInt(document.getElementById('number1').value);
+				var num2 = parseInt(document.getElementById('number2').value);
+				sum  = num1 + num2;
+				document.getElementById('sum').innerText =  sum;
+				//console.log('SUM OF NUMBERS::', sum); single line comment;
+				/* 
+						multi line comment.
+				*/
+
+				 // if(true) {
+				 // 	var test = 10;
+
+				 // }
+
+				 // console.log(test);
+
+			};
+
+			// console.log(num2);
+			// console.log(test);
+		</script>
+	</body>
+</html>
