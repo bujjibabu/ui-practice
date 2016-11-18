@@ -1,0 +1,48 @@
+[{
+	"sno": 1,
+	"Name" :"Bujji",
+	"Role" :"Lead",
+	"Desc" :"UI Developer",
+	"Location" : "Hyderabad"
+},
+{
+	"sno": 2,
+	"Name" :"Babu",
+	"Role" :"Developr",
+	"Desc" :"UI Developer",
+	"Location" : "Hyderabad"
+},
+{
+	"sno": 3,
+	"Name" :"Sai",
+	"Role" :"manger",
+	"Desc" :"Java Developer",
+	"Location" : "Hyderabad"
+},
+{
+	"sno": 4,
+	"Name" :"Bhargav",
+	"Role" :"Lead",
+	"Desc" :"UI Developer",
+	"Location" : "U.S"
+},{
+	"sno": 5,
+	"Name" :"Raja",
+	"Role" :"Lead",
+	"Desc" :"UI Developer",
+	"Location" : "Hyderabad"
+},
+{
+	"sno": 6,
+	"Name" :"User6",
+	"Role" :"Lead",
+	"Desc" :"UI Developer",
+	"Location" : "Hyderabad"
+},
+{
+	"sno": 7,
+	"Name" :"User7",
+	"Role" :"Lead",
+	"Desc" :"UI Developer",
+	"Location" : "Hyderabad"
+}]

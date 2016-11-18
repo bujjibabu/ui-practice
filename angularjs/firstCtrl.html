@@ -4,42 +4,24 @@
 	<title>Angularjs</title>
 </head>
 <body ng-app=""> 
-<form ng-controller="signCtrl">
+<form ng-controller="signCtrl" ng-init="imageCheck();">
 	<div>
 		<label>UserName:</label>
-		<input type="text" placeholder="Enter Name" ng-model="name">
+		<input type="text" placeholder="Enter Name" ng-model="name" readonly="true">
 	</div>
 	<div>
 		<label>Password:</label>
 		<input type="password" placeholder="Enter Password" ng-model="password">
 	</div>
 	<button ng-click="signIn();"> Sign In</button>
-	{{signinObj.name}}
-{{signinObj.pwd}}
+	<!-- {{signinObj.name}} -->
+	<br>
+	Nmae:: <span ng-bind="signinObj.name"></span>
+	<br>
+	Password:: <span ng-bind="signinObj.pwd"></span>
+  <!-- {{signinObj.pwd}} -->
 </form>
-
 <script type="text/javascript" src="https://code.angularjs.org/1.2.1/angular.js"></script>
-<script type="text/javascript">
-	function signCtrl ($scope) {
-		//$scope.name = 'Welcome angular Controllers';
-		$scope.name = ''
-		$scope.signIn = function () {
-			$scope.signinObj = {
-				name: $scope.name,
-				pwd: $scope.password
-			}
-			console.log($scope.signinObj);
-		};
-
-		// var signIn = function() {
-
-		// };
-
-		// function signIn() {
-
-		// }
-
-	}
-</script>
+<script type="text/javascript" src="firstCtrl.js"></script>
 </body>
 </html>

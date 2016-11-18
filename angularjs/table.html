@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+	<title>Angularjs Table</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body ng-controller="TableCtrl" class="container">
+<form>
+	<div class="form-group">
+		<label>Search</label>
+		<input type="Search" ng-model="searchText" placeholder="Search" class="form-control">
+	</div>
+</form>
+<div>
+	<table class="table table-bordered table-hover" ng-init="predict = 'Name'; reverese = false;">
+		 <thead>
+		 	 <tr>
+		 	 	<th>S.NO</th>
+		 	 	<th ng-click="predict = 'Name'; reverese = !reverese;">
+		 	 	Name <span ng-class="(predict == 'Name' && reverese == true) && 'glyphicon glyphicon-chevron-down' || 'glyphicon glyphicon-chevron-up'"></span>
+		 	 	</th>
+		 	 	<th ng-click="predict = 'Role'; reverese = !reverese;">Role <span ng-class="(predict == 'Role' && reverese == true) && 'glyphicon glyphicon-chevron-down' || 'glyphicon glyphicon-chevron-up'"></span></th>
+		 	 	<th>Desc <span class="glyphicon glyphicon-chevron-down"></span></th>
+		 	 	<th>Location <span class="glyphicon glyphicon-chevron-down"></span></th>
+		 	 </tr>
+		 </thead>
+		 <tbody>
+		 		<tr ng-repeat="tableObj in tableData | orderBy: predict: reverese | filter: searchText | limitTo: 10">
+		 			<td>{{$index + 1}}</td>
+		 			<td>{{tableObj.Name}}</td>
+		 			<td>{{tableObj.Role}}</td>
+		 			<td>{{tableObj.Desc}}</td>
+		 			<td>{{tableObj.Location}}</td>
+		 		</tr>
+		 </tbody>
+	</table>
+</div>
+
+<script type="text/javascript" src="https://code.angularjs.org/1.2.1/angular.js"></script>
+<script type="text/javascript" src="tableCtrl.js"></script>
+</body>
+</html>

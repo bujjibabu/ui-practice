@@ -69,3 +69,13 @@ if(x == 0.3) {
 
 console.log(999999999999999);
 console.log(9999999999999999);
+
+if(window.performance)
+
+{
+
+if(performance.navigation.type  == 1 )
+          {
+            console.log('page reloaded');
+          }
+}

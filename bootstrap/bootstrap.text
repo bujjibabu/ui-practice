@@ -1,0 +1,18 @@
+1. what is bootstrap??
+frame work
+2. why bootstrap??
+mobile first
+3. grid system (12 parts)
+4. 
+col-xs-* 
+col-sm-*
+col-md-*
+col-lg-*
+
+*(1-12);
+
+<div class='row'>
+  <div class='col-xs-6 col-sm-4'>testing left</div>
+  <div class='col-xs-6'>testing right</div>
+</div>
+
